@@ -360,7 +360,6 @@ export type ButtonColor =
 export interface ButtonType {
   color?: ButtonColor;
   outline?: boolean;
-  
 }
 
 export type BorderWidth =
