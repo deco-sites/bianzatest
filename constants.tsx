@@ -360,6 +360,7 @@ export type ButtonColor =
 export interface ButtonType {
   color?: ButtonColor;
   outline?: boolean;
+  
 }
 
 export type BorderWidth =
@@ -467,7 +468,7 @@ export const buttonClasses = {
 
 export function getButtonClasses(style: ButtonType) {
   const allButtonClasses = `btn ${buttonClasses[style?.color || "Default"]} ${
-    style?.outline ? "btn-outline" : ""
+    style?.outline ? "btn-outline rounded-full" : ""
   }`;
 
   return allButtonClasses;

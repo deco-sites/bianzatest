@@ -43,8 +43,8 @@ function CardText({
           {tag}
         </div>
       )}
-      {label && <h3 class="text-xl">{label}</h3>}
-      {description && <div class="text-sm">{description}</div>}
+      {label && <h3 class="text-sm">{label}</h3>}
+      {description && <div class="text-sm hidden">{description}</div>}
     </div>
   );
 }
