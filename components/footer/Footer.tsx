@@ -214,13 +214,16 @@ function Footer({
 
   return (
     <footer
-      class={`w-full flex flex-col pt-10 pb-2 md:pb-10 gap-10 ${
-        ColorClasses(layout)
+      class={`w-full flex flex-col pt-10 pb-2 md:pb-10 gap-10 bg-[#f4f4f4] text-[#1c1b1f] ${{/*
+        ColorClasses(layout)*/}
       }`}
     >
+      {/*REDES SOCIAIS*/}
+       {_social}
+      
       <div class="lg:container mx-6 lg:mx-auto">
         {(!layout?.variation || layout?.variation == "Variation 1") && (
-          <div class="flex flex-col gap-10">
+          <div class="flex gap-4 flex-wrap items-center justify-center">
             <div class="flex flex-col md:flex-row md:justify-between md:flex-wrap lg:flex-nowrap gap-8 lg:gap-12">
               {_logo}
               {_sectionLinks}
